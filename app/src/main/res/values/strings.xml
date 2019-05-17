@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name">云摸鱼</string>
+    <!--FuzzyDateFormatter-->
+    <plurals name="fuzzydatetime__seconds_ago">
+        <item quantity="one">%d 秒前</item>
+        <item quantity="other">%d 秒前</item>
+    </plurals>
+    <plurals name="fuzzydatetime__minutes_ago">
+        <item quantity="one">%d 分钟前</item>
+        <item quantity="other">%d 分钟前</item>
+    </plurals>
+    <plurals name="fuzzydatetime__hours_ago">
+        <item quantity="one">%d 小时前</item>
+        <item quantity="other">%d 小时前</item>
+    </plurals>
+    <plurals name="fuzzydatetime__days_ago">
+        <item quantity="one">%d 天前</item>
+        <item quantity="other">%d 天前</item>
+    </plurals>
+    <plurals name="fuzzydatetime__weeks_ago">
+        <item quantity="one">%d 周前</item>
+        <item quantity="other">%d 周前</item>
+    </plurals>
+    <plurals name="fuzzydatetime__months_ago">
+        <item quantity="one">%d 月前</item>
+        <item quantity="other">%d 月前</item>
+    </plurals>
+    <plurals name="fuzzydatetime__years_ago">
+        <item quantity="one">%d 年前</item>
+        <item quantity="other">%d 年前</item>
+    </plurals>
+    <string name="title_home">主页</string>
+    <string name="title_discovery">发现</string>
+    <string name="title_recommend">推荐</string>
+    <string name="profile">我的</string>
+    <string name="get_discovery_fail">获取发现失败</string>
+    <string name="views">观看</string>
+    <string name="night_model">夜间模式</string>
+    <string name="setting">设置</string>
+    <string name="gifts_center">福利中心</string>
+    <string name="about">关于</string>
+    <string name="download_manger">下载</string>
+    <string name="manger_you_download">没网也能用</string>
+    <string name="find_discover">发现</string>
+    <string name="find_new_things">奇♂妙的东西</string>
+    <string name="moyu">摸鱼</string>
+    <string name="moyu_des">摸鱼达人在此</string>
+    <string name="mark">收藏</string>
+    <string name="mark_des">My Precious!!!</string>
+    <string name="home">首页</string>
+    <string name="playlist_song_count">共%1$d首</string>
+    <string name="playlist">播放列表</string>
+    <string name="play_queue_count">播放队列（%1$d）</string>
+    <string name="title_mine">我的</string>
+    <string name="menu_play">播放</string>
+    <string name="menu_play_shuffle">随机播放列表</string>
+    <string name="menu_add_to_track_list">添加到播放队列</string>
+    <string name="menu_rename">重命名</string>
+    <string name="menu_delete">删除</string>
+    <string name="menu_next_play">下一首播放</string>
+    <string name="menu_add_to_playlist">添加到播放列表</string>
+    <string name="menu_remove_from_playlist">从播放列表中移除</string>
+    <string name="music_name_label">歌曲：%1$s</string>
+    <string name="warning">警告</string>
+    <string name="ensure_delete_song_from_disk">删除后将不可恢复,确定删除？</string>
+    <string name="ensure">确定</string>
+</resources>

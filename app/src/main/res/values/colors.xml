@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--    <color name="colorPrimary">#fd4c5b</color>
+    <color name="colorPrimaryDark">#e34451</color>
+    <color name="colorAccent">@color/warm_pink</color>-->
+    <color name="colorPrimary">@color/white</color>
+    <color name="colorPrimaryDark">@color/white</color>
+    <color name="colorAccent">@color/warm_pink</color>
+    <color name="black">#000000</color>
+    <color name="grey_">#aaaaaa</color>
+    <color name="grey_dark">#666666</color>
+    <color name="grey_light">#eeeeee</color>
+    <color name="bark_blue">#333355</color>
+    <color name="grey_blue">#929caf</color>
+    <color name="text_black">#333333</color>
+    <color name="warm_pink">#fd4c5b</color>
+    <color name="white_light">#f8f8f8</color>
+    <color name="white">#ffffff</color>
+    <color name="seek_bar_color">#929caf</color>
+    <color name="seek_bar_bg">#dddddd</color>
+    <color name="seek_bar_secondary_color">#aaaaaa</color>
+</resources>

@@ -1,0 +1,65 @@
+apply plugin: 'com.android.application'
+apply plugin: 'org.greenrobot.greendao'
+
+android {
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId "com.anglll.aflow"
+        minSdkVersion 21
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary= true
+        renderscriptTargetApi 27
+        renderscriptSupportModeEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+greendao {
+    schemaVersion 1
+    daoPackage 'com.anglll.aflow.data.db'
+    targetGenDir 'src/main/java'
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support:design:27.1.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
+    implementation 'com.android.support:support-vector-drawable:27.1.1'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation 'uk.co.chrisjenx:calligraphy:2.3.0'
+    implementation 'com.squareup.okhttp3:okhttp:3.9.1'
+    implementation 'com.squareup.retrofit2:retrofit:2.3.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.3.0'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.0.1'
+    implementation 'io.reactivex.rxjava2:rxjava:2.1.5'
+    implementation 'com.jakewharton.rxrelay2:rxrelay:2.0.0'
+    implementation 'org.greenrobot:greendao:3.2.2'
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    implementation 'com.airbnb.android:epoxy:2.12.0'
+    // Add the annotation processor if you are using Epoxy's annotations (recommended)
+    annotationProcessor 'com.airbnb.android:epoxy-processor:2.12.0'
+    debugImplementation 'com.squareup.leakcanary:leakcanary-android:1.5.4'
+    releaseImplementation 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.4'
+    implementation 'com.android.support:cardview-v7:27.1.1'
+    implementation 'com.facebook.fresco:fresco:1.5.0'
+    implementation 'com.facebook.fresco:animated-gif:1.5.0'
+    implementation 'com.facebook.fresco:imagepipeline-okhttp3:1.5.0'
+    implementation 'com.android.support:multidex:1.0.3'
+    implementation 'com.jaeger.statusbarutil:library:1.5.1'
+    implementation project(':beeLayout')
+    implementation project(':eleven')
+}

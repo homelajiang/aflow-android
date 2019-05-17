@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.anglll.beelayout.BeeFrameLayout
+            android:layout_width="300dp"
+            android:layout_height="300dp">
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:src="@drawable/ic_test_bg" />
+        </com.anglll.beelayout.BeeFrameLayout>
+
+        <com.anglll.beelayout.BeeImageView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_test_bg"
+            app:beeIvBorderColor="#3c3"
+            app:beeIvBorderWidth="1dp"
+            app:beeIvHasBorder="false"
+            app:beeIvRoundCorner="0.1"
+            app:beeIvSpaceWidth="5dp" />
+
+        <com.anglll.beelayout.BeeLayout
+            android:id="@+id/bee_layout"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            app:beeBorderColor="#3c3"
+            app:beeBorderWidth="1dp"
+            app:beeHasBorder="false"
+            app:beeRoundCorner="0.1"
+            app:beeSpaceWidth="5dp">
+
+        </com.anglll.beelayout.BeeLayout>
+
+        <com.anglll.beelayout.BeeItemView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            app:beeIvBorderColor="#3c3"
+            app:beeIvBorderWidth="1dp"
+            app:beeIvHasBorder="false"
+            app:beeIvRoundCorner="0.1"
+            app:beeIvSpaceWidth="5dp">
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:src="@drawable/ic_test_bg" />
+        </com.anglll.beelayout.BeeItemView>
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

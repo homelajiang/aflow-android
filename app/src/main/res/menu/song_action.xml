@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_play"
+        android:icon="@drawable/ic_more_share"
+        android:title="@string/menu_play" />
+    <item
+        android:id="@+id/action_play_next"
+        android:icon="@drawable/ic_more_share"
+        android:title="@string/menu_next_play" />
+    <item
+        android:id="@+id/action_add_to_track_list"
+        android:icon="@drawable/ic_more_share"
+        android:title="@string/menu_add_to_track_list" />
+    <item
+        android:id="@+id/action_add_to_playlist"
+        android:icon="@drawable/ic_more_share"
+        android:title="@string/menu_add_to_playlist" />
+    <item
+        android:id="@+id/action_remove_from_playlist"
+        android:icon="@drawable/ic_more_share"
+        android:title="@string/menu_remove_from_playlist" />
+    <item
+        android:id="@+id/action_delete"
+        android:icon="@drawable/ic_more_share"
+        android:title="@string/menu_delete" />
+</menu>

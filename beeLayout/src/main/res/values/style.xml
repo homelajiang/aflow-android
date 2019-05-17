@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="BeeLayout">
+        <!--是否有边框，默认无-->
+        <attr name="beeHasBorder" format="boolean" />
+        <!--边框颜色-->
+        <attr name="beeBorderColor" format="color|reference" />
+        <!--边框宽度-->
+        <attr name="beeBorderWidth" format="dimension|reference" />
+        <!--间距宽度-->
+        <attr name="beeSpaceWidth" format="dimension|reference" />
+        <!--圆角程度比例 (0-1) -->
+        <attr name="beeRoundCorner" format="float" />
+    </declare-styleable>
+
+    <declare-styleable name="BeeImageView">
+        <!--是否有边框，默认无-->
+        <attr name="beeIvHasBorder" format="boolean" />
+        <!--边框颜色-->
+        <attr name="beeIvBorderColor" format="color|reference" />
+        <!--边框宽度-->
+        <attr name="beeIvBorderWidth" format="dimension|reference" />
+        <!--间距宽度-->
+        <attr name="beeIvSpaceWidth" format="dimension|reference" />
+        <!--圆角程度比例 (0-1) -->
+        <attr name="beeIvRoundCorner" format="float" />
+    </declare-styleable>
+
+    <declare-styleable name="BeeFrameLayout">
+        <!--是否有边框，默认无-->
+        <attr name="beeFlHasBorder" format="boolean" />
+        <!--边框颜色-->
+        <attr name="beeFlBorderColor" format="color|reference" />
+        <!--边框宽度-->
+        <attr name="beeFlBorderWidth" format="dimension|reference" />
+        <!--间距宽度-->
+        <attr name="beeFlSpaceWidth" format="dimension|reference" />
+        <!--圆角程度比例 (0-1) -->
+        <attr name="beeFlRoundCorner" format="float" />
+    </declare-styleable>
+</resources>

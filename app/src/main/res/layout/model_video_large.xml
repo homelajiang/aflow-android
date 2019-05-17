@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="17dp"
+    android:paddingEnd="17dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:paddingTop="10dp"
+        android:paddingBottom="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/avatar"
+            android:layout_width="39dp"
+            android:layout_height="39dp"
+            app:roundAsCircle="true"
+            app:viewAspectRatio="1" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="39dp"
+            android:layout_marginEnd="@dimen/padding_normal"
+            android:layout_marginStart="@dimen/padding_normal"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/owner_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:lines="1"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/text_black"
+                android:textSize="14sp"
+                tools:text="Leonardo DiCaprio" />
+
+            <TextView
+                android:id="@+id/release_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="3dp"
+                android:textColor="@color/grey"
+                android:textSize="10sp"
+                tools:text="5分钟前" />
+        </RelativeLayout>
+
+        <android.support.v7.widget.AppCompatImageView
+            android:padding="8dp"
+            app:tint="@color/grey"
+            app:srcCompat="@drawable/ic_arrow_down"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/TextTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:maxLines="2"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:text="What a beautiful day!" />
+
+        <TextView
+            android:id="@+id/content"
+            style="@style/TextContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp"
+            android:maxLines="4"
+            tools:text="The Sun is shining bright and early in the morning." />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/cover"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:viewAspectRatio="@dimen/video_ratio_normal"
+            tools:background="@color/grey_light" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/ic_action_video"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/heat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textColor="@color/grey"
+            android:layout_marginStart="5dp"
+            android:text="3095热度" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/action_like"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:layout_alignParentEnd="true"
+            android:scaleType="center"
+            android:tint="@color/grey"
+            app:srcCompat="@drawable/ic_action_heart" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/action_comment"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:layout_toStartOf="@id/action_like"
+            android:scaleType="center"
+            android:tint="@color/grey"
+            app:srcCompat="@drawable/ic_action_comment" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/action_link"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:layout_toStartOf="@id/action_comment"
+            android:scaleType="center"
+            android:tint="@color/grey"
+            app:srcCompat="@drawable/ic_action_link" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/action_share"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:layout_toStartOf="@id/action_link"
+            android:scaleType="center"
+            android:tint="@color/grey"
+            app:srcCompat="@drawable/ic_action_send" />
+
+    </RelativeLayout>
+
+</LinearLayout>

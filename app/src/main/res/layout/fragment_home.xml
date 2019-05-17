@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingEnd="24dp"
+        android:paddingStart="24dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingTop="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="今天天气有点热，注意防暑降温。"
+                android:textColor="@color/grey_light"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/temperature_degree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="37°"
+                android:textColor="@color/grey_light"
+                android:textSize="70sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/weather_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="多云"
+                    android:textColor="@color/grey"
+                    android:textSize="14sp" />
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/icon_umbrella"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:tint="@color/grey"
+                    app:srcCompat="@drawable/ic_umbrella" />
+
+                <TextView
+                    android:id="@+id/rainfall_probability"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:text="50%"
+                    android:textColor="@color/grey"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp">
+
+        <com.anglll.beelayout.BeeFrameLayout
+            app:beeBorderColor="#88eeeeee"
+            app:beeBorderWidth="2dp"
+            app:beeHasBorder="false"
+            app:beeSpaceWidth="6dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/simpleDraweeView"
+                android:layout_width="match_parent"
+                app:viewAspectRatio="1"
+                android:alpha=".7"
+                android:layout_height="wrap_content" />
+        </com.anglll.beelayout.BeeFrameLayout>
+
+        <com.anglll.beelayout.BeeLayout
+            android:id="@+id/bee_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            app:beeBorderColor="#88eeeeee"
+            app:beeBorderWidth="2dp"
+            app:beeHasBorder="true"
+            app:beeSpaceWidth="6dp" />
+    </FrameLayout>
+</LinearLayout>
